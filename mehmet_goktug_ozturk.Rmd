@@ -1,0 +1,116 @@
+---
+name: "Mehmet Göktuğ"
+surname: "Öztürk"
+position: "M.S.c. Student"
+address: "Hacettepe University"
+phone: +90 554 814 52 99
+email: "m.goktu66@gmail.com"
+twitter: "mehmet_goktu"
+linkedin: "mehmetgoktug"
+github: "mehmetgoktug"
+date: "`r format(Sys.time(), '%B %Y')`"
+orcid: 0000-0002-8507-9015
+output: 
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# About Me
+
+I am currently working in İzmir Metropolitan Municipality. I took part in different projects from agriculture to animal husbandry, from afforestation to nature-based solutions. At the same time as a master's student in the Division of Ecology at Hacettepe University, I'm exploring "Spatio-temporal Patterns of Lightning-Induced Wildfires in Turkey". During my undergraduate studies, I took part in various field research projects across the Anatolia, covering fire ecology, plant functional traits, nomadic pastoralism, raptor migration, breeding birds, and large mammals. As an enthusiast for open and reproducible science, I like to write R, Python and Bash scripts, especially for spatial analysis.
+
+# Experience
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Desc,
+  "03.2021-Present", "Biologist", "İzmir Metropolitan Municipality","İzmir, Turkey", "I am working ecological animal husbandry, agriculture, afforestation, landscape designing and nature based solutions - NBS in various projects, such as Mera İzmir, Başka Bir Tarım Mümkün, Bir Fidan Bir Dünya, Yaşayan Parklar and HORIZON (CARDIMED-Climate Adaptation and Resilience Demonstrated in the Mediterranean Region). I took an active role in collecting, processing and spatial analysis and modelling of the data.",
+  "09.2015-01.2021", "Undergraduate Research Assistant", "Hacettepe University", "Ankara, Turkey", "I have worked as an undergraduate research assistant on fire ecology, seed germination and plant functional traits projects in the FEL (Functional Ecology Lab) at Hacettepe University with Çağatay Tavşanoğlu, Cansu Ülgen and Gökhan Ergan.",
+  "03.2019-03.2020", "Field Biologist", "Yolda Initiative", "'Mersin, Karaman, Konya, Ankara', Turkey", "I worked from March 2019 to November 2019 as a field biologist in field study on pastoralist's goat herds in Mersin in the Nomadic Pastoralism Effects on Seed Dispersal Project. After the field studies, I worked on this project's lab works. The project was run with partnership Yolda Initiative and Hacettepe University.",
+  "09.2018-09.2019", "Field Biologist", "Doğa Derneği - Birdlife Turkey", "Adana", "I worked as a birdwatcher on the Sarımazı Raptor Migration Count in the Egyptian Vulture New LIFE project (LIFE16 NAT/BG/000874).",
+  "09.2018", "Undergraduate Research Assistant", "Hacettepe University", "Ankara", "I worked as a field study assistant in a research project on Quercus aucheri. We have worked in Aydın, Muğla and Antalya cities, almost all distribution range this species."
+) %>% 
+  detailed_entries(Year, Degree, Institution, Where, Desc)
+```
+
+# Education
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Master of Science - MS, Ecology", "2021-Present", "Hacettepe University", "Ankara, Turkey",
+  "Bachelor's degree, Biology", "2015-2021", "Hacettepe University", "Ankara, Turkey",
+  "Associate's degree - Agriculture", "2020-Present", "Anadolu University", "Eskişehir, Turkey"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Volunteering
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Desc,
+  "2018-Present", "Editor", "havadelisi.com", "Turkey", "I am an editor in havadelisi.com and it's social media accounts.",
+  "2017-2018", "Field Biologist", "Middle East Technical University", "Ankara, Turkey", "I was volunteer as birdwatcher in the Investigating the Biodiversity of Lake Eymir Area's Forest and Steppe Ecosystems and Determining Conservation Priority Zones Project in METU's Birdwatching Club(OKGT).",
+  "2018-2019", "Field Biologist", "Middle East Technical University", "Ankara, Turkey", "I was volunteer as birdwatcher in the Searching for White-headed Duck (Oxyura leucocephala) Breeding and Wintering Grounds in Central Anatolia and Monitoring of Its Populations Project(Mohamed bin Zayed Species project number 182515710).",
+  "2016-2017", "Field Biologist", "WWF-Türkiye", "Ankara, Turkey", "I was volunteer as a birdwatcher in the European Breeding Bird Atlas Project 2 (EBBA 2).",
+  "08.2016", "Undergraduate Research Assistant", "Ministry of Agriculture and Forestry", "Bolu, Turkey", "I was volunteer as an assistant of wildlife biologist in the Impact of Anatolian Motorway on Large Mammals project with Ali Onur Sayar."
+) %>% 
+  detailed_entries(Year, Degree, Institution, Where, Desc)
+```
+
+# Skills
+
+```{r}
+tribble(
+  ~ Title, ~ Skill,
+  "Computer Skills", "R | Python | Bash | AWK | GDAL/OGR | QGIS | SAGA GIS | GRASS GIS | GEE | ArcGIS | SQL | GIT | Office Programs | Markdown",
+  "Other Skills", "Ecology | Biogeography | Spatial Analysis | Remote Sensing | Data Analysis | Data Entry | Field Work | Birdwatching"
+) %>%
+  detailed_entries(what = Title, why = Skill)
+```
+
+# Languages
+
+```{r}
+tribble(
+  ~ Lang,
+  "Turkish (Native)",
+  "English (B1)"
+) %>%
+  detailed_entries(why = Lang)
+```
+
+
+# References
+
+```{r}
+tribble(
+  ~ Desc,
+  "Engin Yılmaz | Yolda Initiative | e-mail: engin@bican.net",
+  "Prof. Dr. Utku Perktaş | Professor in Division of Ecology, Department of Biology, Hacettepe University, Turkey | Research Associate in Division of Vertebrate Zoology, Department of Ornithology, American Museum of Natural History, USA | e-mail: perktas@hacettepe.edu.tr", "Prof. Dr. Çağatay Tavşanoğlu | Professor in Division of Ecology, Department of Biology, Hacettepe University, Turkey | e-mail: ctavsan@hacettepe.edu.tr", "Dr. İrem Tüfekcioğlu | Forest Ecologist | e-mail: iremtuf@gmail.com"
+) %>%
+  detailed_entries(why = Desc)
+```
+
+
+<!-- \ -->
+<!-- \hspace*{70pt}{\labelitemi{}}&nbsp;&nbsp;Engin Yılmaz | Yolda Initiative | e-mail: [engin@bican.net](engin@bican.net) -->
+<!-- \ -->
+<!-- \hspace*{70pt}{\labelitemi{}}&nbsp;&nbsp;Prof. Dr. Utku Perktaş |\ -->
+<!-- \hspace*{83pt}Professor in Division of Ecology, Department of Biology, \ -->
+<!-- \hspace*{83pt}Hacettepe University, Turkey |\ -->
+<!-- \hspace*{83pt}Research Associate in Division of Vertebrate Zoology, \ -->
+<!-- \hspace*{83pt}Department of Ornithology, American Museum of Natural History, USA |\ -->
+<!-- \hspace*{83pt}e-mail: perktas@hacettepe.edu.tr -->
+<!-- \ -->
+<!-- \hspace*{70pt}{\labelitemi{}}&nbsp;&nbsp;Prof. Dr. Çağatay Tavşanoğlu | Professor in Division of Ecology, \ -->
+<!-- \hspace*{83pt}Department of Biology, Hacettepe University, Turkey |\ -->
+<!-- \hspace*{83pt}e-mail: ctavsan@hacettepe.edu.tr -->
+<!-- \hspace*{70pt}{\labelitemi{}}&nbsp;&nbsp;Dr. İrem Tüfekcioğlu | Forest Ecologist | e-mail: [iremtuf@gmail.com](iremtuf@gmail.com) -->
