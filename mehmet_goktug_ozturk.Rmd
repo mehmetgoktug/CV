@@ -2,7 +2,7 @@
 name: "Mehmet Göktuğ"
 surname: "Öztürk"
 position: "Ecologist"
-address: "Hacettepe University"
+address: "İzmir Metropolitan Municipality"
 phone: +90 554 814 52 99
 email: "m.goktu66@gmail.com"
 researchgate: "Mehmet-Goektug-Oeztuerk"
