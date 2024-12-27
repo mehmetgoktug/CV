@@ -1,7 +1,7 @@
 ---
 name: "Mehmet Göktuğ"
 surname: "Öztürk"
-position: "M.S.c. Student"
+position: "Ecologist"
 address: "Hacettepe University"
 phone: +90 554 814 52 99
 email: "m.goktu66@gmail.com"
