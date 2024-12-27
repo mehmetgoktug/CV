@@ -5,9 +5,10 @@ position: "M.S.c. Student"
 address: "Hacettepe University"
 phone: +90 554 814 52 99
 email: "m.goktu66@gmail.com"
+researchgate: "Mehmet-Goektug-Oeztuerk"
+github: "mehmetgoktug"
 twitter: "mehmet_goktu"
 linkedin: "mehmetgoktug"
-github: "mehmetgoktug"
 date: "`r format(Sys.time(), '%B %Y')`"
 orcid: 0000-0002-8507-9015
 output: 
@@ -22,7 +23,11 @@ library(vitae)
 
 # About Me
 
-I am currently working in İzmir Metropolitan Municipality. I took part in different projects from agriculture to animal husbandry, from afforestation to nature-based solutions. At the same time as a master's student in the Division of Ecology at Hacettepe University, I'm exploring "Spatio-temporal Patterns of Lightning-Induced Wildfires in Turkey". During my undergraduate studies, I took part in various field research projects across the Anatolia, covering fire ecology, plant functional traits, nomadic pastoralism, raptor migration, breeding birds, and large mammals. As an enthusiast for open and reproducible science, I like to write R, Python and Bash scripts, especially for spatial analysis.
+I am currently working at the Directorate of Climate Change and Clean Energy of İzmir Metropolitan Municipality. I have contributed to various projects ranging from agriculture and animal husbandry to afforestation, nature-based solutions, and climate resilience.
+
+I completed my master's in Ecology at Hacettepe University, focusing on 'Spatiotemporal Patterns of Lightning-Induced Wildfires in Turkey.' I participated in various field research across Anatolia, including fire ecology, plant functional traits, nomadic pastoralism, raptor migration, breeding birds, and large mammals. My research interests include ecological modeling, fire ecology, and biogeography. 
+
+As an advocate for open and reproducible science, I write scripts in R, Python, and Bash.
 
 # Experience
 
@@ -30,7 +35,7 @@ I am currently working in İzmir Metropolitan Municipality. I took part in diffe
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Desc,
-  "03.2021-Present", "Biologist", "İzmir Metropolitan Municipality","İzmir, Turkey", "I am working ecological animal husbandry, agriculture, afforestation, landscape designing and nature based solutions - NBS in various projects, such as Mera İzmir, Başka Bir Tarım Mümkün, Bir Fidan Bir Dünya, Yaşayan Parklar and HORIZON (CARDIMED-Climate Adaptation and Resilience Demonstrated in the Mediterranean Region). I took an active role in collecting, processing and spatial analysis and modelling of the data.",
+  "03.2021-Present", "Biologist", "İzmir Metropolitan Municipality","İzmir, Turkey", "I am working on climate resilience and nature based solutions - NBS in various projects, such as Interreg NEXT MED, Climaax, Urban Climate Resilience Program - UCRP at the Directorate of Climate Change and Clean Energy of İzmir Metropolitan Municipality. During my time at the muncipality, I worked ecological animal husbandry, agriculture, afforestation, landscape designing and nature based solutions - NBS in various projects, such as Mera İzmir, Başka Bir Tarım Mümkün, Bir Fidan Bir Dünya, Yaşayan Parklar and HORIZON (CARDIMED-Climate Adaptation and Resilience Demonstrated in the Mediterranean Region). I took an active role in collecting, processing and spatial analysis and modelling of the data.",
   "09.2015-01.2021", "Undergraduate Research Assistant", "Hacettepe University", "Ankara, Turkey", "I have worked as an undergraduate research assistant on fire ecology, seed germination and plant functional traits projects in the FEL (Functional Ecology Lab) at Hacettepe University with Çağatay Tavşanoğlu, Cansu Ülgen and Gökhan Ergan.",
   "03.2019-03.2020", "Field Biologist", "Yolda Initiative", "'Mersin, Karaman, Konya, Ankara', Turkey", "I worked from March 2019 to November 2019 as a field biologist in field study on pastoralist's goat herds in Mersin in the Nomadic Pastoralism Effects on Seed Dispersal Project. After the field studies, I worked on this project's lab works. The project was run with partnership Yolda Initiative and Hacettepe University.",
   "09.2018-09.2019", "Field Biologist", "Doğa Derneği - Birdlife Turkey", "Adana", "I worked as a birdwatcher on the Sarımazı Raptor Migration Count in the Egyptian Vulture New LIFE project (LIFE16 NAT/BG/000874).",
@@ -44,9 +49,8 @@ tribble(
 ```{r}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Master of Science - MS, Ecology", "2021-Present", "Hacettepe University", "Ankara, Turkey",
+  "Master of Science - MS, Ecology", "2021-2024", "Hacettepe University", "Ankara, Turkey",
   "Bachelor's degree, Biology", "2015-2021", "Hacettepe University", "Ankara, Turkey",
-  "Associate's degree - Agriculture", "2020-Present", "Anadolu University", "Eskişehir, Turkey"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
@@ -65,13 +69,25 @@ tribble(
   detailed_entries(Year, Degree, Institution, Where, Desc)
 ```
 
+# Publications
+
+```{r}
+tribble(
+	~ Publications,
+	"Öztürk, M.G., Bekar, İ., Tavşanoğlu, Ç., 2024. Rethinking lightning-induced fires: Spatial variability and implications for management policies. Forest Ecology and Management 572 122262. https://doi.org/10.1016/j.foreco.2024.122262",
+	"Öztürk, M. G., Bekar, İ., Tavşanoğlu, Ç., 2024. Rethinking lightning-induced fires: Spatial variability and implications for management policies. In: Proceedings of the 10th Ecology and Evolutionary Biology Symposium, Çanakkale, Türkiye."
+) %>%
+	detailed_entries(why = Publications)
+
+```
+
 # Skills
 
 ```{r}
 tribble(
   ~ Title, ~ Skill,
   "Computer Skills", "R | Python | Bash | AWK | GDAL/OGR | QGIS | SAGA GIS | GRASS GIS | GEE | ArcGIS | SQL | GIT | Office Programs | Markdown",
-  "Other Skills", "Ecology | Biogeography | Spatial Analysis | Remote Sensing | Data Analysis | Data Entry | Field Work | Birdwatching"
+  "Other Skills", "Ecology | Ecological Modelling | Biogeography | Spatial Analysis | Remote Sensing | Data Analysis | Data Entry | Field Work | Birdwatching"
 ) %>%
   detailed_entries(what = Title, why = Skill)
 ```
